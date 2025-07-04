@@ -25,6 +25,36 @@
             cursor: pointer;
             filter: sepia(20%);
         }
+
+        .center-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            font-family: Arial, sans-serif;
+        }
+
+        .center-button:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .center-button:active {
+            transform: translate(-50%, -50%) scale(0.95);
+        }
     </style>
 </head>
 <body>
@@ -56,6 +86,8 @@
         </defs>
         <g id="screen" />
     </svg>
+
+    <a href="https://www.google.com" class="center-button" target="_blank">Click For OFF Form</a>
 
     <script>
         "use strict";
